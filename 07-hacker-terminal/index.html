@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacker's Terminal</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        /* Fullscreen Hacker Terminal Style */
+        body {
+            background-color: #000;
+            /* Black background */
+            color: #00ff00;
+            /* Green text */
+            font-family: "Courier New", monospace;
+            /* Terminal font */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Terminal box */
+        .terminal {
+            width: 90%;
+            height: 90%;
+            background-color: #002200;
+            /* Dark green background */
+            padding: 20px;
+            /* border: 2px solid #00ff00; */
+            border-radius: 15px;
+            box-shadow: 0 0 10px #00ff00;
+            text-align: left;
+            white-space: pre-line;
+        }
+
+        /* Blinking effect for dots */
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        .blinking {
+            animation: blink 0.8s infinite;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="terminal">
+        <p id="hacking-text">Welcome! to Hacking World</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
